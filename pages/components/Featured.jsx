@@ -1,5 +1,6 @@
 import styles from "../../styles/Featured.module.css";
 import Image from 'next/image';
+import ReactSlidy from 'react-slidy'
 
 const Featured = () => {
 
@@ -11,15 +12,14 @@ const Featured = () => {
     
     return (
         <div className={styles.container}>
-            <Image src="/src/arrowl.png" alt="" layout="fill" />
                 <div clasName={styles.wrapper}>
                     <div className={styles.imgContainer}>
-                        {/* {images.map((img, i) => (
-                           <Image src="/img/featured.jpeg" alt="" key={i} layout="fill" />
-                        ))} */}
+                        <Image src='/../public/img/featured2.jpeg' alt="" layout='responsive' width='1920px' height='1080px' />
+                        <div className={styles.titleCtn}>
+                        <h1 className={styles.title}>Title</h1>
+                        </div>
                     </div>
                 </div>
-            <Image src="/src/arrowr.png" alt="" layout="fill" />
         </div>
     )
 }

@@ -1,3 +1,35 @@
-.container {
-    height: calc(100vh - 100px);
+.imgContainer img {
+    /* margin-top: 100px !important; */
+    position: relative !important;
+    display: block !important;
+    opacity: 1;
+    background-color: #d1411e !important;
+    width: 100vw !important;
+    max-width: auto !important;
+    height: calc(100vh - 100px) !important;
+    min-height: 700px !important;
+}
+
+.imgContainer span {
+    padding: 0 !important;
+    z-index: -1;
+}
+
+.titleCtn {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #f9f9f9;
+    position: relative;
+    font-weight: 600;
+    font-size: 50px;
 }
